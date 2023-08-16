@@ -33,23 +33,28 @@ export default function Login() {
     }
   return (
     <>
-           <div className='container'>
+            <div className = "shadow-lg round">
+           <div className='container content'>
      <form onSubmit={handleSubmit}> 
-    
-  <div className="mb-3">
+   <div className = 'some'>
+  <div className="form-outline mb-4 systum">
     <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
     <input type="email" className="form-control"  name='email' value={credentials.email} onChange={onChange} id="exampleInputEmail1" aria-describedby="emailHelp"/>
     <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
   </div>
-  <div className="mb-3">
+  <div className="form-outline mb-4 systum">
     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
     <input type="password" className="form-control"  name='password' value={credentials.password} onChange={onChange} id="exampleInputPassword1"/>
   </div>
   
-
+  
+  <div className = 'systum'> 
   <button type="submit" className="btn btn-primary">Submit</button>
   <Link to='/createuser' className='m-3 btn btn-danger'>I'm a new user</Link>
+  </div> 
+  </div>
 </form>
+</div>
 </div>
     </>
   )

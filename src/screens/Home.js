@@ -8,6 +8,7 @@ import Card from '../components/Card'
 
 export default function Home() {
 
+
     const [foodCat, setFoodCat] = useState([]);
     const [foodItems, setFoodItem] = useState([]);
     const [search, setSearch] = useState('');
